@@ -98,7 +98,7 @@ public class FacturaController {
     
     public boolean saveComprobanteDb(RespuestaComprobante respuesata, UserTransaction ctx, EntityManagerFactory em, String cliente){
         FacturaDesktop f = new FacturaDesktop();
-        f.setProveedorId("0702144833 ");
+        f.setProveedorId("0702144833");
         f.setNumeroAutorizacion(respuesata.getComprobantes().get(0).getNumeroAutorizacion());
         f.setClaveAcceso(respuesata.getComprobantes().get(0).getClaveAcceso());
         PersonaEmpresaUsuario p = new PersonaEmpresaUsuario();

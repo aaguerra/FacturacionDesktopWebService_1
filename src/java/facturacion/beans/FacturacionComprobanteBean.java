@@ -79,7 +79,7 @@ public class FacturacionComprobanteBean implements FacturacionComprobanteRemote{
             //res
             //respuesta = facturaController.getAutorizacionSri();
             //imprimirRespuesta(res,2);
-            facturaController.saveComprobanteDb(respuesta, ctx, em.getEntityManagerFactory(), factura.getCi_ruc().substring(0, 10));
+            //facturaController.saveComprobanteDb(respuesta, ctx, em.getEntityManagerFactory(), factura.getCi_ruc().substring(0, 10));
             System.out.println("//////////////////");
             if (respuesta.getEstado() == 0) {
                 try {
